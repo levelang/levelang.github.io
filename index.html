@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel Admin - Level Up Translates</title>
+  <script type="module" src="./firebase-config.js"></script>
+  <script type="module" src="./painel.js"></script>
+</head>
+<body style="background:#0f0f1a;color:white;font-family:'Segoe UI',sans-serif;">
+  <h1 style="text-align:center;color:#00aaff;">🎮 Painel Admin</h1>
+  <div id="auth-section" style="text-align:center;margin:30px;">
+    <button id="login">Login com Google</button>
+    <button id="logout" style="display:none;">Sair</button>
+  </div>
+  <div id="painel" style="display:none;padding:20px;">
+    <h2>Adicionar novo jogo</h2>
+    <input type="text" id="nome" placeholder="Nome do Jogo"><br><br>
+    <input type="text" id="imagem" placeholder="URL da imagem"><br><br>
+    <input type="text" id="descricao" placeholder="Descrição"><br><br>
+    <input type="text" id="download" placeholder="Link de download"><br><br>
+    <button id="salvar">Salvar</button>
+    <div id="jogos" style="margin-top:40px;"></div>
+  </div>
+</body>
+</html>
